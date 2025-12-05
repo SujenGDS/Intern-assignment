@@ -31,3 +31,5 @@ app.put("/users", validateUser, (req, res) => {
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
+
+// refactoring is important because it improves code readability, maintainability, and reduces redundancy. By extracting common validation logic into a middleware function, we avoid duplicating code in multiple route handlers, making it easier to manage and update in the future.
